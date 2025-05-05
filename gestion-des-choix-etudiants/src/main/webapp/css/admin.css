@@ -1,0 +1,74 @@
+.admin-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 60px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in;
+}
+
+.admin-container h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.admin-table th, .admin-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.admin-table th {
+  background-color: var(--accent);
+  color: var(--text);
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.status-valide {
+  background-color: #8BD9A3;
+  color: #1E5631;
+}
+
+.status-rejete {
+  background-color: #F28B82;
+  color: #842029;
+}
+
+.status-attente {
+  background-color: #F2E6D0;
+  color: #6A4E33;
+}
+
+.action-form input[type="submit"] {
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 2px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-form input[type="submit"]:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  transform: scale(1.05);
+}

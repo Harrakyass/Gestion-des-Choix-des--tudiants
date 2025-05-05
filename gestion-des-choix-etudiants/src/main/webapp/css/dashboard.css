@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+.dashboard-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.dashboard-container h2 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.dashboard-container select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.dashboard-container select:focus {
+  border-color: var(--secondary);
+  outline: none;
+}
+
+.dashboard-container input[type="submit"] {
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dashboard-container input[type="submit"]:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  transform: scale(1.03);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
